@@ -1,10 +1,5 @@
-﻿Imports System.Collections.Generic
-Imports System.Linq
-Imports System.Web
-Imports System.Data
-Imports System.Data.SqlClient
+﻿Imports System.Data.SqlClient
 Imports Dapper
-Imports System.Configuration
 
 Public Class CustomerRepository
     Implements ICustomerRepository
