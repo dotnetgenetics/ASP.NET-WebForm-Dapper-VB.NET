@@ -15,7 +15,7 @@ Public Class CustomerRepository
     End Function
 
     Public Function FindById(Id As Integer) As Customer Implements ICustomerRepository.FindById
-        Return Me._db.Query("SELECT * FROM Customer WHERE CustomerID=@Id", New With { _
+        Return Me._db.Query(Of Customer)("SELECT * FROM Customer WHERE CustomerID=@Id", New With { _
             Key .Id = Id _
         }).FirstOrDefault()
     End Function
